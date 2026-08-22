@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log In — Skillix</title>
+  <meta name="description" content="Log in to your Skillix account to continue your courses.">
+  <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand"><img src="images/logo.svg" alt="Skillix logo" class="brand-mark-img">Skillix</a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Courses</a>
+        <a href="login.html" class="is-active">Login</a>
+        <a href="register.html">Register</a>
+      </nav>
+      <div class="nav-cta">
+        <a href="login.html" class="btn btn-outline btn-sm">Log In</a>
+        <a href="register.html" class="btn btn-solid btn-sm">Get Started</a>
+        <label for="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">&#9776;</label>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="auth-wrap">
+        <div class="card auth-card">
+          <div class="auth-head">
+            <span class="badge">Welcome back</span>
+            <h1>Log in to Skillix</h1>
+            <p>Continue learning where you left off.</p>
+          </div>
+
+          <form action="#" method="post">
+            <div class="form-group">
+              <label for="login-email">Email Address</label>
+              <input type="email" id="login-email" name="email" placeholder="you@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="login-password">Password</label>
+              <input type="password" id="login-password" name="password" placeholder="Enter your password" required>
+            </div>
+
+            <div class="form-links">
+              <label class="check-row" for="remember-me">
+                <input type="checkbox" id="remember-me" name="remember">
+                Remember Me
+              </label>
+              <a href="#">Forgot Password?</a>
+            </div>
+
+            <button type="submit" class="btn btn-solid btn-block">Log In</button>
+          </form>
+
+          <p class="auth-foot">Don't have an account? <a href="register.html">Register here</a></p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand"><img src="images/logo.svg" alt="Skillix logo" class="brand-mark-img">Skillix</a>
+        <p>Practical, project-based courses to help you build industry-ready skills at your own pace.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Courses</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Account</h4>
+        <ul>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="payment.html">Checkout</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="legal.html">Privacy Policy</a></li>
+          <li><a href="legal.html">Terms &amp; Conditions</a></li>
+          <li><a href="legal.html">Refund Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Skillix. All rights reserved.</p>
+      <div class="footer-socials">
+        <a href="#" aria-label="Skillix on Twitter">Tw</a>
+        <a href="#" aria-label="Skillix on LinkedIn">In</a>
+        <a href="#" aria-label="Skillix on YouTube">Yt</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

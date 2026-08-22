@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout — Skillix</title>
+  <meta name="description" content="Complete your Skillix course order. This is a static demo checkout — no real payment is processed.">
+  <link rel="stylesheet" href="css/payment.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand"><img src="images/logo.svg" alt="Skillix logo" class="brand-mark-img">Skillix</a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Courses</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+      </nav>
+      <div class="nav-cta">
+        <a href="login.html" class="btn btn-outline btn-sm">Log In</a>
+        <a href="register.html" class="btn btn-solid btn-sm">Get Started</a>
+        <label for="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">&#9776;</label>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <span class="hero-eyebrow">Checkout</span>
+        <h1>Complete Your Enrollment</h1>
+        <p>Review your order and enter payment details to confirm your course.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container payment-grid">
+
+        <div class="card summary-card">
+          <h2 style="font-size:1.3rem; margin-bottom:1.25rem;">Order Summary</h2>
+          <table class="order-table">
+            <caption class="visually-hidden">Skillix sample course order summary</caption>
+            <thead>
+              <tr>
+                <th scope="col">Product</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Price</th>
+                <th scope="col">Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Web Development Course</td>
+                <td>1</td>
+                <td>&#8377;1,799</td>
+                <td>&#8377;1,799</td>
+              </tr>
+              <tr>
+                <td>Data Structures &amp; Algorithms Course</td>
+                <td>1</td>
+                <td>&#8377;1,999</td>
+                <td>&#8377;1,999</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="3" class="muted">Subtotal</td>
+                <td>&#8377;3,798</td>
+              </tr>
+              <tr>
+                <td colspan="3" class="muted">Discount</td>
+                <td>&#8722;&#8377;300</td>
+              </tr>
+              <tr>
+                <td colspan="3">Total Due</td>
+                <td>&#8377;3,498</td>
+              </tr>
+            </tfoot>
+          </table>
+
+          <div class="demo-note">
+            <span>&#9432;</span>
+            <span><strong>Static demo checkout.</strong> This page does not process real payments — it is for demonstration purposes only.</span>
+          </div>
+        </div>
+
+        <div class="card payment-card">
+          <h2 style="font-size:1.3rem; margin-bottom:1.25rem;">Payment Details</h2>
+          <form action="#" method="post">
+            <div class="form-group">
+              <label for="pay-name">Name on Card</label>
+              <input type="text" id="pay-name" name="card_name" placeholder="As it appears on card" required>
+            </div>
+
+            <div class="form-group">
+              <label for="pay-card">Card Number</label>
+              <input type="text" id="pay-card" name="card_number" placeholder="0000 0000 0000 0000" required>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="pay-expiry">Expiry Date</label>
+                <input type="text" id="pay-expiry" name="expiry" placeholder="MM / YY" required>
+              </div>
+              <div class="form-group">
+                <label for="pay-cvv">CVV</label>
+                <input type="text" id="pay-cvv" name="cvv" placeholder="123" required>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-solid btn-block">Pay Now — &#8377;3,498</button>
+            <p class="field-hint" style="text-align:center; margin-top:0.8rem;">Your payment information is never actually transmitted on this demo page.</p>
+          </form>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand"><img src="images/logo.svg" alt="Skillix logo" class="brand-mark-img">Skillix</a>
+        <p>Practical, project-based courses to help you build industry-ready skills at your own pace.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Courses</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Account</h4>
+        <ul>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="payment.html">Checkout</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="legal.html">Privacy Policy</a></li>
+          <li><a href="legal.html">Terms &amp; Conditions</a></li>
+          <li><a href="legal.html">Refund Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Skillix. All rights reserved.</p>
+      <div class="footer-socials">
+        <a href="#" aria-label="Skillix on Twitter">Tw</a>
+        <a href="#" aria-label="Skillix on LinkedIn">In</a>
+        <a href="#" aria-label="Skillix on YouTube">Yt</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

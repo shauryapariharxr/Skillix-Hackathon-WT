@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skillix — Learn Skills. Build Your Future.</title>
+  <meta name="description" content="Skillix is an online learning platform offering practical, industry-ready courses in programming, web development, data and AI.">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand"><img src="images/logo.svg" alt="Skillix logo" class="brand-mark-img">Skillix</a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html" class="is-active">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Courses</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+      </nav>
+      <div class="nav-cta">
+        <a href="login.html" class="btn btn-outline btn-sm">Log In</a>
+        <a href="register.html" class="btn btn-solid btn-sm">Get Started</a>
+        <label for="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">&#9776;</label>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="hero-eyebrow">Online Learning Platform</span>
+          <h1>Learn skills.<span class="accent">Build your future.</span></h1>
+          <p class="hero-sub">Build industry-ready skills with practical courses.</p>
+          <form class="hero-search" action="services.html" method="get">
+            <div class="search-row">
+              <span class="search-icon" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/>
+                  <line x1="16.5" y1="16.5" x2="21" y2="21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </span>
+              <label for="hero-search-input" class="visually-hidden">Search for courses, skills, or technologies</label>
+              <input type="text" id="hero-search-input" name="q" class="search-input" placeholder="Search for courses, skills, or technologies&hellip;">
+              <button type="submit" class="search-btn">Search</button>
+            </div>
+            <div class="trending-row">
+              <span class="trending-label">Trending:</span>
+              <a href="services.html" class="trending-chip">Web Development</a>
+              <a href="services.html" class="trending-chip">Python Programming</a>
+              <a href="services.html" class="trending-chip">AI &amp; Machine Learning</a>
+            </div>
+          </form>
+          <div class="hero-actions">
+            <a href="services.html" class="btn btn-primary">Explore Courses</a>
+            <a href="register.html" class="btn btn-outline">Create Free Account</a>
+          </div>
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <span class="num">120+</span>
+              <span class="label">Hands-on courses</span>
+            </div>
+            <div class="hero-stat">
+              <span class="num">40k+</span>
+              <span class="label">Learners worldwide</span>
+            </div>
+            <div class="hero-stat">
+              <span class="num">4.8/5</span>
+              <span class="label">Average rating</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-art">
+          <img src="images/hero-art.svg" alt="Illustration of a learning path connecting three course milestones toward a skill-up badge">
+        </div>
+      </div>
+    </section>
+
+    <!-- Features / Courses preview -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Why Skillix</span>
+          <h2>Everything you need to learn with purpose</h2>
+          <p>A focused set of tools built around one goal — helping you finish what you start.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="card feature-card">
+            <div class="feature-icon">01</div>
+            <h3>Project-based Courses</h3>
+            <p>Every course ends with something real you can show, not just a certificate.</p>
+          </article>
+          <article class="card feature-card">
+            <div class="feature-icon">02</div>
+            <h3>Expert Mentors</h3>
+            <p>Learn from instructors who work in the field they teach, not just study it.</p>
+          </article>
+          <article class="card feature-card">
+            <div class="feature-icon">03</div>
+            <h3>Flexible Pace</h3>
+            <p>Lessons are broken into short modules so you can learn around your schedule.</p>
+          </article>
+          <article class="card feature-card">
+            <div class="feature-icon">04</div>
+            <h3>Career Support</h3>
+            <p>Resume reviews, interview practice and a portfolio you actually finish.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Short About -->
+    <section class="section section-alt">
+      <div class="container about-split">
+        <div class="about-copy">
+          <span class="eyebrow">About Skillix</span>
+          <h2>A platform built for people who learn by doing</h2>
+          <p>Skillix brings together practical, project-based courses in the skills employers actually ask for — from programming fundamentals to data and AI. No fluff, no filler modules.</p>
+          <ul class="checklist">
+            <li><span class="tick">&#10003;</span> Beginner to advanced learning tracks</li>
+            <li><span class="tick">&#10003;</span> Real projects reviewed by mentors</li>
+            <li><span class="tick">&#10003;</span> Certificates recognised by hiring partners</li>
+          </ul>
+          <div class="hero-actions" style="margin-top:1.5rem;">
+            <a href="about.html" class="btn btn-outline-dark">More About Us</a>
+          </div>
+        </div>
+        <div class="path-graphic">
+          <img src="images/hero-art.svg" alt="Abstract graphic of connected learning milestones representing course progress" style="filter:drop-shadow(0 20px 30px rgba(15,27,61,0.15));">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand"><img src="images/logo.svg" alt="Skillix logo" class="brand-mark-img">Skillix</a>
+        <p>Practical, project-based courses to help you build industry-ready skills at your own pace.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Courses</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Account</h4>
+        <ul>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="payment.html">Checkout</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="legal.html">Privacy Policy</a></li>
+          <li><a href="legal.html">Terms &amp; Conditions</a></li>
+          <li><a href="legal.html">Refund Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Skillix. All rights reserved.</p>
+      <div class="footer-socials">
+        <a href="#" aria-label="Skillix on Twitter">Tw</a>
+        <a href="#" aria-label="Skillix on LinkedIn">In</a>
+        <a href="#" aria-label="Skillix on YouTube">Yt</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

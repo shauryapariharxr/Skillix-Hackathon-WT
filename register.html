@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register — Skillix</title>
+  <meta name="description" content="Create your free Skillix account and start learning today.">
+  <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand"><img src="images/logo.svg" alt="Skillix logo" class="brand-mark-img">Skillix</a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Courses</a>
+        <a href="login.html">Login</a>
+        <a href="register.html" class="is-active">Register</a>
+      </nav>
+      <div class="nav-cta">
+        <a href="login.html" class="btn btn-outline btn-sm">Log In</a>
+        <a href="register.html" class="btn btn-solid btn-sm">Get Started</a>
+        <label for="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">&#9776;</label>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="auth-wrap">
+        <div class="card auth-card wide">
+          <div class="auth-head">
+            <span class="badge">Join Skillix</span>
+            <h1>Create your account</h1>
+            <p>Start learning practical, industry-ready skills today.</p>
+          </div>
+
+          <form action="#" method="post">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="reg-name">Full Name</label>
+                <input type="text" id="reg-name" name="full_name" placeholder="Your full name" required>
+              </div>
+              <div class="form-group">
+                <label for="reg-phone">Phone Number</label>
+                <input type="tel" id="reg-phone" name="phone" placeholder="+91 00000 00000" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="reg-email">Email Address</label>
+              <input type="email" id="reg-email" name="email" placeholder="you@example.com" required>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="reg-password">Password</label>
+                <input type="password" id="reg-password" name="password" placeholder="Create a password" required>
+              </div>
+              <div class="form-group">
+                <label for="reg-confirm-password">Confirm Password</label>
+                <input type="password" id="reg-confirm-password" name="confirm_password" placeholder="Re-enter password" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Gender</label>
+              <div class="radio-row">
+                <label for="gender-female"><input type="radio" id="gender-female" name="gender" value="female"> Female</label>
+                <label for="gender-male"><input type="radio" id="gender-male" name="gender" value="male"> Male</label>
+                <label for="gender-other"><input type="radio" id="gender-other" name="gender" value="other"> Other</label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="reg-course">Course / Interest</label>
+              <select id="reg-course" name="course" required>
+                <option value="" selected disabled>Select a course</option>
+                <option value="java">Java Programming</option>
+                <option value="webdev">Web Development</option>
+                <option value="python">Python Programming</option>
+                <option value="dsa">Data Structures &amp; Algorithms</option>
+                <option value="dbms">Database Management</option>
+                <option value="ai">AI &amp; Machine Learning</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="check-row" for="reg-terms">
+                <input type="checkbox" id="reg-terms" name="terms" required>
+                I agree to the <a href="legal.html">Terms &amp; Conditions</a> and Privacy Policy
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-solid btn-block">Create Account</button>
+          </form>
+
+          <p class="auth-foot">Already have an account? <a href="login.html">Log in</a></p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand"><img src="images/logo.svg" alt="Skillix logo" class="brand-mark-img">Skillix</a>
+        <p>Practical, project-based courses to help you build industry-ready skills at your own pace.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Courses</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Account</h4>
+        <ul>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="payment.html">Checkout</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="legal.html">Privacy Policy</a></li>
+          <li><a href="legal.html">Terms &amp; Conditions</a></li>
+          <li><a href="legal.html">Refund Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Skillix. All rights reserved.</p>
+      <div class="footer-socials">
+        <a href="#" aria-label="Skillix on Twitter">Tw</a>
+        <a href="#" aria-label="Skillix on LinkedIn">In</a>
+        <a href="#" aria-label="Skillix on YouTube">Yt</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

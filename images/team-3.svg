@@ -1,0 +1,12 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Portrait placeholder with initials SK">
+  <defs>
+    <linearGradient id="grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1c2c5c"/>
+      <stop offset="100%" stop-color="#6c5ce7"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" fill="url(#grad)"/>
+  <circle cx="100" cy="80" r="34" fill="#ffffff" opacity="0.9"/>
+  <path d="M40 175 C 40 130, 160 130, 160 175 Z" fill="#ffffff" opacity="0.9"/>
+  <text x="100" y="196" text-anchor="middle" font-family="Sora, sans-serif" font-weight="700" font-size="16" fill="#ffffff" opacity="0.0">SK</text>
+</svg>
