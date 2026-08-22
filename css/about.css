@@ -528,7 +528,7 @@ p {
   position: sticky;
   top: 0;
   z-index: 50;
-  padding-block: 1.1rem 0;
+  padding-block: 1.6rem 0;
   background: transparent;
 }
 
@@ -539,23 +539,23 @@ p {
   gap: var(--space-3);
   max-width: var(--container-w);
   margin-inline: auto;
-  padding: 0.6rem 0.7rem 0.6rem 1.35rem;
-  background: rgba(13, 20, 45, 0.82);
-  border: 1px solid rgba(255,255,255,0.14);
-  border-radius: 20px;
-  backdrop-filter: blur(20px) saturate(160%);
-  -webkit-backdrop-filter: blur(20px) saturate(160%);
-  box-shadow: 0 18px 40px -20px rgba(0,0,0,0.55), inset 0 1px 0 rgba(255,255,255,0.07);
-  transition: background 0.25s ease, border-color 0.25s ease;
+  padding: 1.35rem 1.35rem 1.35rem 2.2rem;
+  background: rgba(8, 11, 20, 0.86);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 50px;
+  backdrop-filter: blur(28px) saturate(180%);
+  -webkit-backdrop-filter: blur(28px) saturate(180%);
+  box-shadow: 0 28px 70px -28px rgba(0,0,0,0.9), inset 0 1px 0 rgba(255,255,255,0.07);
+  transition: background 0.4s cubic-bezier(0.4,0,0.2,1), border-color 0.4s cubic-bezier(0.4,0,0.2,1), box-shadow 0.4s cubic-bezier(0.4,0,0.2,1);
 }
 
 .brand {
   display: flex;
   align-items: center;
-  gap: 0.65rem;
+  gap: 0.85rem;
   font-family: var(--font-display);
   font-weight: 800;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: #fff;
   letter-spacing: -0.01em;
 }
@@ -575,26 +575,31 @@ p {
 }
 
 .brand-mark-img {
-  width: 34px;
-  height: 34px;
-  border-radius: 10px;
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
   flex: none;
-  box-shadow: 0 6px 16px -6px rgba(108, 92, 231, 0.6);
+  box-shadow: 0 8px 20px -6px rgba(108, 92, 231, 0.65);
+  transition: transform 0.4s cubic-bezier(0.4,0,0.2,1);
+}
+
+.brand:hover .brand-mark-img {
+  transform: scale(1.06) rotate(-4deg);
 }
 
 .nav-links {
   display: flex;
   align-items: center;
-  gap: var(--space-4);
+  gap: 2.6rem;
 }
 
 .nav-links a {
   color: rgba(255,255,255,0.78);
   font-weight: 500;
-  font-size: 0.92rem;
+  font-size: 0.98rem;
   position: relative;
-  padding-block: 0.3rem;
-  transition: color 0.2s ease;
+  padding-block: 0.35rem;
+  transition: color 0.35s cubic-bezier(0.4,0,0.2,1);
 }
 
 .nav-links a::after {
@@ -606,7 +611,7 @@ p {
   height: 2px;
   border-radius: 2px;
   background: linear-gradient(90deg, var(--violet-500), var(--blue-600));
-  transition: width 0.25s ease;
+  transition: width 0.4s cubic-bezier(0.4,0,0.2,1);
 }
 
 .nav-links a:hover,
@@ -630,7 +635,7 @@ p {
 .nav-cta {
   display: flex;
   align-items: center;
-  gap: 0.6rem;
+  gap: 0.85rem;
 }
 
 .nav-toggle-checkbox {
@@ -655,7 +660,7 @@ p {
   border-radius: 999px;
   border: 1px solid transparent;
   cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  transition: transform 0.4s cubic-bezier(0.4,0,0.2,1), box-shadow 0.4s cubic-bezier(0.4,0,0.2,1), background 0.4s cubic-bezier(0.4,0,0.2,1), color 0.3s ease, border-color 0.3s ease;
 }
 
 .btn-primary {
@@ -1160,9 +1165,10 @@ input:focus, select:focus, textarea:focus {
 /* ---------- Footer ---------- */
 
 .site-footer {
-  background: var(--navy-900);
+  background: #05070f;
   color: rgba(255,255,255,0.72);
   padding-top: var(--space-6);
+  border-top: 1px solid rgba(255,255,255,0.08);
 }
 
 .footer-grid {
@@ -1295,21 +1301,21 @@ input:focus, select:focus, textarea:focus {
 
   .nav-links {
     position: fixed;
-    inset: 86px var(--space-3) auto var(--space-3);
-    background: rgba(13, 20, 45, 0.92);
-    border: 1px solid rgba(255,255,255,0.14);
-    border-radius: 18px;
-    backdrop-filter: blur(20px) saturate(160%);
-    -webkit-backdrop-filter: blur(20px) saturate(160%);
-    box-shadow: 0 18px 40px -16px rgba(0,0,0,0.55);
+    inset: 112px var(--space-3) auto var(--space-3);
+    background: rgba(6, 9, 18, 0.95);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 26px;
+    backdrop-filter: blur(24px) saturate(180%);
+    -webkit-backdrop-filter: blur(24px) saturate(180%);
+    box-shadow: 0 18px 40px -16px rgba(0,0,0,0.7);
     flex-direction: column;
     align-items: flex-start;
     gap: 0;
     padding: var(--space-2) var(--space-3) var(--space-3);
-    transform: translateY(-8px);
+    transform: translateY(-10px);
     opacity: 0;
     pointer-events: none;
-    transition: opacity 0.2s ease, transform 0.2s ease;
+    transition: opacity 0.4s cubic-bezier(0.4,0,0.2,1), transform 0.4s cubic-bezier(0.4,0,0.2,1);
   }
 
   .nav-links a {

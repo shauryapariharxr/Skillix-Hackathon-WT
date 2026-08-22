@@ -17,8 +17,6 @@
         <a href="index.html" class="is-active">Home</a>
         <a href="about.html">About</a>
         <a href="services.html">Courses</a>
-        <a href="login.html">Login</a>
-        <a href="register.html">Register</a>
       </nav>
       <div class="nav-cta">
         <a href="login.html" class="btn btn-outline btn-sm">Log In</a>
@@ -31,106 +29,343 @@
   <main>
     <!-- Hero -->
     <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <span class="hero-eyebrow">Online Learning Platform</span>
-          <h1>Learn skills.<span class="accent">Build your future.</span></h1>
-          <p class="hero-sub">Build industry-ready skills with practical courses.</p>
-          <form class="hero-search" action="services.html" method="get">
-            <div class="search-row">
-              <span class="search-icon" aria-hidden="true">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/>
-                  <line x1="16.5" y1="16.5" x2="21" y2="21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                </svg>
-              </span>
-              <label for="hero-search-input" class="visually-hidden">Search for courses, skills, or technologies</label>
-              <input type="text" id="hero-search-input" name="q" class="search-input" placeholder="Search for courses, skills, or technologies&hellip;">
-              <button type="submit" class="search-btn">Search</button>
-            </div>
-            <div class="trending-row">
-              <span class="trending-label">Trending:</span>
-              <a href="services.html" class="trending-chip">Web Development</a>
-              <a href="services.html" class="trending-chip">Python Programming</a>
-              <a href="services.html" class="trending-chip">AI &amp; Machine Learning</a>
-            </div>
-          </form>
-          <div class="hero-actions">
-            <a href="services.html" class="btn btn-primary">Explore Courses</a>
-            <a href="register.html" class="btn btn-outline">Create Free Account</a>
+      <div class="container hero-grid-center">
+        <span class="hero-eyebrow">&#10022; Your All-in-One Learning Platform</span>
+        <h1>Build skills that<span class="accent">build your future.</span></h1>
+        <p class="hero-sub">Skillix helps you learn in-demand skills, ship real projects, and land the work you actually want — without the fluff.</p>
+
+        <form class="hero-search" action="services.html" method="get">
+          <div class="search-row">
+            <span class="search-icon" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/>
+                <line x1="16.5" y1="16.5" x2="21" y2="21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </span>
+            <label for="hero-search-input" class="visually-hidden">Search for courses, skills, or technologies</label>
+            <input type="text" id="hero-search-input" name="q" class="search-input" placeholder="Search for courses, skills, or technologies&hellip;">
+            <button type="submit" class="search-btn">Search</button>
           </div>
-          <div class="hero-stats">
-            <div class="hero-stat">
-              <span class="num">120+</span>
-              <span class="label">Hands-on courses</span>
-            </div>
-            <div class="hero-stat">
-              <span class="num">40k+</span>
-              <span class="label">Learners worldwide</span>
-            </div>
-            <div class="hero-stat">
-              <span class="num">4.8/5</span>
-              <span class="label">Average rating</span>
-            </div>
+          <div class="trending-row">
+            <span class="trending-label">Trending:</span>
+            <a href="services.html" class="trending-chip">Web Development</a>
+            <a href="services.html" class="trending-chip">Python Programming</a>
+            <a href="services.html" class="trending-chip">AI &amp; Machine Learning</a>
+          </div>
+        </form>
+
+        <div class="hero-actions center">
+          <a href="services.html" class="btn btn-primary">Explore Courses</a>
+          <a href="register.html" class="btn btn-outline">Create Free Account</a>
+        </div>
+      </div>
+
+      <!-- Stat cards -->
+      <div class="container stats-grid">
+        <div class="stat-card">
+          <span class="stat-icon">&#9737;</span>
+          <span class="stat-label">Hands-on Courses</span>
+          <span class="stat-value">120+</span>
+          <span class="stat-note">Across 6 skill tracks</span>
+        </div>
+        <div class="stat-card stat-card--wide">
+          <span class="stat-label">Skill Completion Rate</span>
+          <span class="stat-value">92%</span>
+          <div class="stat-bars" aria-hidden="true">
+            <span style="--h:38%"></span><span style="--h:52%"></span><span style="--h:47%"></span>
+            <span style="--h:64%"></span><span style="--h:58%"></span><span style="--h:92%"></span>
           </div>
         </div>
-        <div class="hero-art">
-          <img src="images/hero-art.svg" alt="Illustration of a learning path connecting three course milestones toward a skill-up badge">
+        <div class="stat-card stat-card--accent">
+          <span class="stat-label">Learners Worldwide</span>
+          <span class="stat-value">40K+</span>
+          <span class="stat-chip">+18% this year</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Hiring Partners</span>
+          <span class="stat-value">500+</span>
+          <span class="stat-note">Reviewing real portfolios</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Average Rating</span>
+          <span class="stat-value">4.9<span class="stat-value-sm">/5</span></span>
+          <span class="stat-note">From 12,000+ reviews</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Mentor Support</span>
+          <span class="stat-value">24/7</span>
+          <span class="stat-note">Real humans, not bots</span>
         </div>
       </div>
     </section>
 
-    <!-- Features / Courses preview -->
+    <!-- Impact / why section -->
+    <section class="section">
+      <div class="container impact-split">
+        <div class="impact-copy">
+          <span class="eyebrow">Built Different</span>
+          <h2>Learning that actually sticks, for every career path</h2>
+          <p>Skillix adapts to how you learn — pairing short lessons with real projects and mentor feedback so the skill sticks long after the course ends.</p>
+
+          <div class="impact-list">
+            <div class="impact-item">
+              <h3>Project-based curriculum</h3>
+              <p>Every module ends in something you build and ship, not just a quiz you forget.</p>
+            </div>
+            <div class="impact-item">
+              <h3>Adaptive skill paths</h3>
+              <p>Your track adjusts to your pace and goals, with milestones tuned to your target role.</p>
+            </div>
+            <div class="impact-item">
+              <h3>Verified, secure credentials</h3>
+              <p>SOC2-aligned data handling and certificates that hiring partners can verify instantly.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="impact-media">
+          <div class="mock-panel">
+            <div class="mock-panel-head">
+              <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+              <span class="mock-panel-title">Your Skill Dashboard</span>
+            </div>
+            <div class="mock-panel-body">
+              <div class="mock-chart">
+                <span style="--h:30%"></span><span style="--h:55%"></span><span style="--h:40%"></span>
+                <span style="--h:70%"></span><span style="--h:52%"></span><span style="--h:85%"></span>
+                <span style="--h:64%"></span><span style="--h:96%"></span>
+              </div>
+              <div class="mock-rows">
+                <div class="mock-row"><span>Python for Data Analysis</span><span class="mock-pill mock-pill--done">Completed</span></div>
+                <div class="mock-row"><span>React &amp; Modern Frontend</span><span class="mock-pill mock-pill--live">In progress</span></div>
+                <div class="mock-row"><span>Applied Machine Learning</span><span class="mock-pill">Up next</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- One platform / features showcase -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow">Endless Possibilities</span>
+          <h2>One Platform. Every Skill You Need.</h2>
+          <p>From your first line of code to your first offer letter — everything lives in one focused workspace.</p>
+        </div>
+
+        <div class="showcase-row">
+          <div class="showcase-media">
+            <div class="mock-panel mock-panel--code">
+              <div class="mock-panel-head">
+                <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+                <span class="mock-panel-title">project.py</span>
+              </div>
+              <div class="mock-code">
+                <p><span class="tok-kw">def</span> <span class="tok-fn">train_model</span>(data):</p>
+                <p>&nbsp;&nbsp;model = Skillix.<span class="tok-fn">fit</span>(data)</p>
+                <p>&nbsp;&nbsp;<span class="tok-kw">return</span> model.evaluate()</p>
+                <p class="tok-comment"># ✓ Reviewed by mentor · 2m ago</p>
+              </div>
+            </div>
+          </div>
+          <div class="showcase-copy">
+            <span class="feature-icon">01</span>
+            <h3>Project-Based Courses</h3>
+            <p>Learn by building real, portfolio-ready projects — reviewed by mentors who work in the field they teach.</p>
+            <a href="services.html" class="btn btn-outline-dark">Learn More &rarr;</a>
+          </div>
+        </div>
+
+        <div class="showcase-row showcase-row--reverse">
+          <div class="showcase-media">
+            <div class="mock-panel mock-panel--analytics">
+              <div class="mock-panel-head">
+                <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+                <span class="mock-panel-title">Mentor Feedback</span>
+              </div>
+              <div class="mock-panel-body">
+                <div class="mock-feedback">
+                  <span class="avatar-circle">MR</span>
+                  <div>
+                    <p class="mock-feedback-name">Maya R. &middot; Senior Mentor</p>
+                    <p class="mock-feedback-note">Clean state management — try memoizing this selector next.</p>
+                  </div>
+                </div>
+                <div class="mock-line-graph" aria-hidden="true">
+                  <svg viewBox="0 0 300 90" preserveAspectRatio="none">
+                    <polyline points="0,70 40,55 80,60 120,35 160,42 200,20 240,28 300,8" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="showcase-copy">
+            <span class="feature-icon">02</span>
+            <h3>Expert Mentor Reviews</h3>
+            <p>Get line-by-line feedback and career guidance from mentors currently working in the industry.</p>
+            <a href="services.html" class="btn btn-outline-dark">Learn More &rarr;</a>
+          </div>
+        </div>
+
+        <div class="showcase-row">
+          <div class="showcase-media">
+            <div class="mock-panel mock-panel--cert">
+              <div class="mock-panel-head">
+                <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+                <span class="mock-panel-title">Verified Credential</span>
+              </div>
+              <div class="mock-cert">
+                <span class="mock-cert-badge">&#10003;</span>
+                <p class="mock-cert-title">Full-Stack Web Development</p>
+                <p class="mock-cert-sub">Verified &middot; Issued to A. Sharma</p>
+              </div>
+            </div>
+          </div>
+          <div class="showcase-copy">
+            <span class="feature-icon">03</span>
+            <h3>Career-Ready Credentials</h3>
+            <p>Earn certificates hiring partners can verify instantly, backed by a portfolio you actually finish.</p>
+            <a href="services.html" class="btn btn-outline-dark">Learn More &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Steps -->
     <section class="section">
       <div class="container">
-        <div class="section-head">
-          <span class="eyebrow">Why Skillix</span>
-          <h2>Everything you need to learn with purpose</h2>
-          <p>A focused set of tools built around one goal — helping you finish what you start.</p>
+        <div class="section-head center">
+          <span class="eyebrow">Easy Onboarding</span>
+          <h2>Get Started in 3 Easy Steps</h2>
+          <p>Go from sign-up to your first shipped project in under a week.</p>
         </div>
-        <div class="feature-grid">
-          <article class="card feature-card">
-            <div class="feature-icon">01</div>
-            <h3>Project-based Courses</h3>
-            <p>Every course ends with something real you can show, not just a certificate.</p>
-          </article>
-          <article class="card feature-card">
-            <div class="feature-icon">02</div>
-            <h3>Expert Mentors</h3>
-            <p>Learn from instructors who work in the field they teach, not just study it.</p>
-          </article>
-          <article class="card feature-card">
-            <div class="feature-icon">03</div>
-            <h3>Flexible Pace</h3>
-            <p>Lessons are broken into short modules so you can learn around your schedule.</p>
-          </article>
-          <article class="card feature-card">
-            <div class="feature-icon">04</div>
-            <h3>Career Support</h3>
-            <p>Resume reviews, interview practice and a portfolio you actually finish.</p>
-          </article>
+        <div class="steps-grid">
+          <div class="step-card">
+            <span class="step-num">1</span>
+            <h3>Create your account</h3>
+            <p>Pick a learning track that matches your goals. A 14-day free trial is included on every plan.</p>
+          </div>
+          <div class="step-card">
+            <span class="step-num">2</span>
+            <h3>Follow your skill path</h3>
+            <p>Work through short modules, hands-on labs, and real projects at your own pace.</p>
+          </div>
+          <div class="step-card">
+            <span class="step-num">3</span>
+            <h3>Ship &amp; get certified</h3>
+            <p>Submit your capstone project, get mentor feedback, and earn a verified credential.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Short About -->
+    <!-- Pricing -->
     <section class="section section-alt">
-      <div class="container about-split">
-        <div class="about-copy">
-          <span class="eyebrow">About Skillix</span>
-          <h2>A platform built for people who learn by doing</h2>
-          <p>Skillix brings together practical, project-based courses in the skills employers actually ask for — from programming fundamentals to data and AI. No fluff, no filler modules.</p>
-          <ul class="checklist">
-            <li><span class="tick">&#10003;</span> Beginner to advanced learning tracks</li>
-            <li><span class="tick">&#10003;</span> Real projects reviewed by mentors</li>
-            <li><span class="tick">&#10003;</span> Certificates recognised by hiring partners</li>
-          </ul>
-          <div class="hero-actions" style="margin-top:1.5rem;">
-            <a href="about.html" class="btn btn-outline-dark">More About Us</a>
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow">Flexible Pricing</span>
+          <h2>Simple, Transparent Pricing</h2>
+          <p>Choose the plan that fits how you learn. Upgrade or cancel anytime.</p>
+        </div>
+        <div class="pricing-grid">
+          <div class="price-card">
+            <h3>Starter</h3>
+            <p class="price-desc">Ideal for getting started with one skill track.</p>
+            <p class="price-amount">$0<span>/month</span></p>
+            <ul class="price-features">
+              <li>&#10003; 3 hands-on courses</li>
+              <li>&#10003; Community forum access</li>
+              <li>&#10003; Basic progress tracking</li>
+              <li>&#10003; Email support</li>
+            </ul>
+            <a href="register.html" class="btn btn-outline-dark btn-block">Start Free</a>
+          </div>
+          <div class="price-card price-card--featured">
+            <span class="price-badge">Most Popular</span>
+            <h3>Pro Learner</h3>
+            <p class="price-desc">For learners building a serious portfolio.</p>
+            <p class="price-amount">$19<span>/month</span></p>
+            <ul class="price-features">
+              <li>&#10003; Unlimited course access</li>
+              <li>&#10003; Mentor project reviews</li>
+              <li>&#10003; Verified certificates</li>
+              <li>&#10003; Priority 24/7 support</li>
+            </ul>
+            <a href="register.html" class="btn btn-solid btn-block">Upgrade to Pro</a>
+          </div>
+          <div class="price-card">
+            <h3>Teams</h3>
+            <p class="price-desc">Upskill a whole team with shared reporting.</p>
+            <p class="price-amount">$49<span>/month</span></p>
+            <ul class="price-features">
+              <li>&#10003; Everything in Pro Learner</li>
+              <li>&#10003; Team progress dashboard</li>
+              <li>&#10003; Dedicated success manager</li>
+              <li>&#10003; Custom learning paths</li>
+            </ul>
+            <a href="register.html" class="btn btn-outline-dark btn-block">Talk to Sales</a>
           </div>
         </div>
-        <div class="path-graphic">
-          <img src="images/hero-art.svg" alt="Abstract graphic of connected learning milestones representing course progress" style="filter:drop-shadow(0 20px 30px rgba(15,27,61,0.15));">
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow">Learner Success</span>
+          <h2>See How Learners Are Leveling Up</h2>
+          <p>Real outcomes from people who finished what they started.</p>
+        </div>
+        <div class="testimonial-grid">
+          <div class="testimonial-card">
+            <p class="testimonial-quote">The project reviews changed everything for me. I finally had a portfolio I was proud to send to recruiters.</p>
+            <div class="testimonial-footer">
+              <div class="testimonial-person">
+                <span class="avatar-circle">SK</span>
+                <div>
+                  <p class="testimonial-name">Sarah Kim</p>
+                  <p class="testimonial-role">Frontend Developer, formerly in retail</p>
+                </div>
+              </div>
+              <div class="testimonial-stat">
+                <span class="stat-value">3x</span>
+                <span class="stat-note">Faster job placement</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <p class="testimonial-quote">Flexible pacing and mentor feedback let me switch careers into data while working full-time.</p>
+            <div class="testimonial-footer">
+              <div class="testimonial-person">
+                <span class="avatar-circle">MV</span>
+                <div>
+                  <p class="testimonial-name">Marcus Vale</p>
+                  <p class="testimonial-role">Data Analyst, career switcher</p>
+                </div>
+              </div>
+              <div class="testimonial-stat">
+                <span class="stat-value">$15k</span>
+                <span class="stat-note">Average salary increase</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA banner -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-banner">
+          <h2>Start Building Skills That Matter Today</h2>
+          <p>Join over 40,000 learners using Skillix to move their career forward.</p>
+          <div class="hero-actions center">
+            <a href="register.html" class="btn btn-primary">Start 14-Day Free Trial</a>
+            <a href="about.html" class="btn btn-outline">Learn More About Us</a>
+          </div>
         </div>
       </div>
     </section>
@@ -165,6 +400,15 @@
           <li><a href="legal.html">Terms &amp; Conditions</a></li>
           <li><a href="legal.html">Refund Policy</a></li>
         </ul>
+      </div>
+      <div class="footer-col footer-newsletter">
+        <h4>Newsletter</h4>
+        <p>Get new courses and learning tips in your inbox.</p>
+        <form class="newsletter-form" onsubmit="return false;">
+          <label for="newsletter-email" class="visually-hidden">Email address</label>
+          <input type="email" id="newsletter-email" placeholder="Enter your email">
+          <button type="submit">Subscribe</button>
+        </form>
       </div>
     </div>
     <div class="container footer-bottom">
