@@ -230,7 +230,7 @@ p {
   max-width: var(--container-w);
   margin-inline: auto;
   padding: 1.35rem 1.35rem 1.35rem 2.2rem;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 50px;
   backdrop-filter: blur(10px) saturate(120%);
@@ -253,11 +253,10 @@ p {
 }
 
 .brand-mark-img {
-  width: 46px;
-  height: 46px;
-  border-radius: 14px;
+  width: 50px;
+  height: auto;
   flex: none;
-  box-shadow: 0 8px 20px -6px rgba(108, 92, 231, 0.65);
+  filter: drop-shadow(0 6px 14px rgba(108, 92, 231, 0.55));
   transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
