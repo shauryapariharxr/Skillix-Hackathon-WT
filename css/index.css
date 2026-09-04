@@ -256,7 +256,7 @@ p {
   width: 70px;
   height: 50px;
   flex: none;
-  filter: drop-shadow(0 6px 14px rgba(108, 92, 231, 0.55));
+  filter: none;
   transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
