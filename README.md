@@ -4,7 +4,7 @@
 
 Skillix is a static, front-end-only online learning / course platform website built with **HTML5 and CSS3 only** (no JavaScript, frameworks, or backend), for the Advanced Web Technologies (CSE0309) Mini Hackathon.
 
-> **Note on folder structure:** the original hackathon brief specifies exactly three shared CSS files (`style.css`, `responsive.css`, `components.css`). At the requester's explicit instruction, this build instead gives **every page its own individual, self-contained stylesheet** (e.g. `index.css`, `about.css`, …). Each file includes all variables, resets, navbar/footer, buttons, cards, forms and responsive rules that page needs, so every page works standalone. This is a deliberate deviation from the "mandatory folder structure" in the brief — confirm with your instructor before submitting if strict adherence to the original structure is required for grading.
+> **Note on folder structure:** the original hackathon brief specifies exactly three shared CSS files (`style.css`, `responsive.css`, `components.css`). This build instead ships **one shared stylesheet, `css/index.css`**, linked by every page. This is a deliberate deviation from the "mandatory folder structure" in the brief — confirm with your instructor before submitting if strict adherence to the original structure is required for grading.
 
 ## Project Structure
 
@@ -18,23 +18,21 @@ Skillix/
 ├── register.html
 ├── payment.html
 ├── legal.html
+├── test.html          (scratch/dev file — not part of the site, see Notes)
 │
 ├── css/
-│   ├── index.css
-│   ├── about.css
-│   ├── services.css
-│   ├── login.css
-│   ├── register.css
-│   ├── payment.css
-│   └── legal.css
+│   └── index.css      (single shared stylesheet used by every page)
 │
 ├── images/
-│   └── (all images here)
+│   ├── logo.svg
+│   ├── hero-art.svg
+│   ├── course-*.svg   (6 course icons)
+│   └── team-*.svg      (3 team avatars)
 │
 └── README.md
 ```
 
-Each HTML page links only its own stylesheet, e.g. `<link rel="stylesheet" href="css/about.css">` in `about.html`.
+Every page links the same stylesheet: `<link rel="stylesheet" href="css/index.css">`.
 
 ## Pages
 
@@ -70,21 +68,27 @@ The following prompts were used with AI assistance during development of this pr
 14. Create only this design refresh: taking visual/interaction cues from a reference SaaS landing page (dark hero, prominent search bar with trending tags, staggered entrance animations) and a peer project's README (pure-CSS `fadeInUp` keyframes, glassmorphic sticky navbar, button hover = lift + `scale(1.04)`) — add a hero search bar with trending course chips to `index.html`, staggered `fadeInUp` entrance animation on the hero content, a permanent elevation shadow on the sticky navbar, and a scale-up hover state on all buttons, keeping Skillix's existing navy/violet color system. Also flatten the zip/output folder structure so `index.html` sits at the project root instead of inside a nested folder.
 15. Create only this rebrand + navbar redesign: rename the project from the previous name to **Skillix**, design a new logo mark (`images/logo.svg` — gradient rounded-square badge with a connected-dots motif), swap the old letter-badge logo for it across every page, and rebuild the navbar as a floating glassmorphic pill (inset from the viewport edges, rounded corners, dark translucent blur background, permanent elevation shadow) instead of a full-width bar — including a matching floating glass card for the mobile dropdown menu. Also restyle the home page hero heading into a two-line treatment with an italic gradient accent line ("Learn skills. / *Build your future.*"), inspired by a reference landing page's hero typography.
 
+> **Note:** step 13 above split styles into one file per page; the codebase has since been consolidated back to a single shared `css/index.css` (see Project Structure). Update this log with the actual prompt if you re-run that consolidation intentionally — it isn't currently recorded as its own step.
+
 ## Design System
 
-- **Primary color:** deep navy blue (`#0f1b3d` / `#1c2c5c`)
-- **Accent:** blue-to-violet gradient (`#3454d1` → `#6c5ce7`)
-- **Background:** light gray/white (`#f6f7fb`)
-- **Cards:** white surface, subtle shadow, rounded corners
-- **Typography:** Sora (headings) + Inter (body)
+- **Theme:** dark navy/violet, glassmorphic surfaces
+- **Background:** near-black navy (`#05070d` / `#090c17`)
+- **Surfaces:** translucent glass panels (`rgba(255,255,255,0.045–0.09)`) over navy (`#0e1327` / `#121834`)
+- **Accent gradient:** blue → violet (`#4d7bff` → `#7c6cf6`, with `#a99bff` as a lighter violet accent)
+- **Secondary accent:** mint (`#34e5a8`)
+- **Text:** off-white (`#f3f4fb`) with muted gray-blue for secondary text (`#aab0c9`, `#7c82a0`)
+- **Typography:** Sora (headings/display) + Inter (body), loaded from Google Fonts
 - **Layout:** CSS Flexbox and CSS Grid
-- **Buttons:** consistent pill-shaped style with hover lift effect
+- **Navbar:** floating glassmorphic pill, inset from the viewport edges with a permanent elevation shadow
+- **Buttons:** pill-shaped, scale-up + lift hover state
 
 ## Notes
 
 - No JavaScript, frameworks, libraries, or backend code is used, per the hackathon rules.
 - The mobile navigation menu toggle is implemented with a CSS-only checkbox technique (no JS).
 - `payment.html` is a static demo — no real payment is processed.
+- `test.html` is a leftover scratch file from development (a bare "hello" page with no styling or links). It isn't linked from anywhere in the site and can be safely deleted before submission.
 - All images are custom-made SVG illustrations/placeholders stored in `images/`, each with descriptive `alt` text.
-- CSS is intentionally duplicated across the seven per-page stylesheets (shared rules like the navbar, footer and buttons repeat in every file) since each page is self-contained rather than pulling from shared files.
+- All seven site pages (`index`, `about`, `services`, `login`, `register`, `payment`, `legal`) share the single `css/index.css` stylesheet — shared rules like the navbar, footer and buttons are defined once rather than duplicated per page.
 - Logo mark (`images/logo.svg`) is an original SVG design, not a third-party asset.
